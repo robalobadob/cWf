@@ -1,6 +1,11 @@
-// Sticky Sidebar
+// ****   Task 1: STICKY SIDEBAR   ****
+
+// Make Sidebar Sticky
 const sidebar = document.querySelector(".show-on-desktop-min");
 sidebar.setAttribute("style", "position: sticky; top: 10em");
+
+
+// ****   Task 2: MODAL   ****
 
 // Create Modal Button on Sidebar
 const modalButton = document.createElement("button");
@@ -14,8 +19,8 @@ const modal = document.createElement("div");
 modal.setAttribute("id", "sidebar-modal");
 modal.classList.add("modal");
 modal.setAttribute("style", "display: none; position: fixed; z-index: 1; padding-top: 100px; left: 0; top: 0; width: 100%; height: 100%; background-color: rgb(0,0,0); background-color: rgba(0,0,0,0.6); transform: scale(1.1)");
-console.log(modal.style.display);
 
+// Add Modal to DOM
 const main = document.querySelector("main");
 main.append(modal);
 
@@ -34,10 +39,10 @@ modal.append(modalContent);
 var closeButton = modalContent.querySelector(".close-button");
 closeButton.setAttribute("style", "float: right; width: 1.5rem; line-height: 1.5rem; text-align: center; cursor: pointer; font-size: 30px; font-weight: bold; border-radius: 0.25rem");
 
+// Add Button Functionality
 modalButton.onclick = function() {
     modal.style.display = "block";
 }
-console.log(modal.style.display);
 closeButton.onclick = function() {
     modal.style.display = "none";
 }
@@ -46,18 +51,57 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
-console.log(modal.style.display);
 
-function mobileModal(x) {
-    if (x.matches) {
-        modal.style.padding = "0px";
-        modalContent.style.margin = "0px"
-    }
-};
 
-var x = window.matchMedia("(max-width: 700px)").matches;
-mobileModal(x);
-x.addEventListener("change", mobileModal);
+// ****   Task 3: SECTION   ****
+
+// Create Section
+const valueProp = document.createElement("div");
+valueProp.setAttribute("id", "value-props");
+valueProp.classList.add("container");
+valueProp.setAttribute("style", "margin: auto; padding: 0");
+valueProp.innerHTML = `
+    <section style="padding: 45px 50px; text-align: center">
+        <h2 style="font-weight: bold">Value Propositions</h2>
+        <div class="values-content-wrapper" style="display: flex; justify-content: space-around">
+            <div class="values-content-block" style="margin: 0 30px; text-align: center; width: 25vw">
+                <img class="values-img" style="height: 50px; width: auto" src="https://img.icons8.com/external-wanicon-lineal-color-wanicon/344/external-computer-free-time-wanicon-lineal-color-wanicon.png" alt="Computer Icon">
+                <h3 class="values-header style="color: #444b4e; font-size: 20px; text-align: center; padding-top: 10px">Header 1</h3>
+                <p class="values-content" style="color: font-size: 9px; text-align: justify; margin: 0 20px; padding: 10px: width: 100%">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, voluptatibus? Magnam a saepe dolorem ipsa cumque iste laudantium nulla perspiciatis incidunt in, sequi minus provident inventore amet fuga? Omnis, pariatur!</p>
+            </div>
+            <div class="values-content-block" style="margin: 0 30px; text-align: center; width: 25vw">
+                <img class="values-img" style="height: 50px; width: auto" src="https://img.icons8.com/cute-clipart/344/truck.png" alt="Truck Icon">
+                <h3 class="values-header" style="color: #444b4e; font-size: 20px; text-align: center; padding-top: 10px">Header 2</h3>
+                <p class="values-content" style="color: font-size: 9px; text-align: justify; margin: 0 20px; padding: 10px: width: 100%">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et officiis vero, magnam mollitia inventore iste eaque suscipit placeat! Earum est ducimus vitae ratione! Maiores fuga, reiciendis debitis quae quo veniam.</p>
+            </div>
+            <div class="values-content-block" style="margin: 0 30px; text-align: center; width: 25vw">
+                <img class="values-img" style="height: 50px; width: auto" src="https://img.icons8.com/bubbles/344/touchscreen-smartphone.png" alt="Phone Icon">
+                <h3 class="values-header" style="color: #444b4e; font-size: 20px; text-align: center; padding-top: 10px">Header 3</h3>
+                <p class="values-content" style="color: font-size: 9px; text-align: justify; margin: 0 20px; padding: 10px: width: 100%">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut consequatur autem quas quaerat saepe inventore alias odit porro rem ipsam. Et impedit repellendus a consequatur nobis veniam iste similique repudiandae?</p>
+            </div>
+        </div>
+    </section>
+`;
+
+// Add to DOM
+const leadership = document.querySelector(".col-12");
+leadership.append(valueProp);
+
+
+
+
+// function mobileModal(x) {
+//     if (x.matches) {
+//         modal.style.padding = "0px";
+//         modalContent.style.margin = "0px"
+//     }
+// };
+
+// var x = window.matchMedia("(max-width: 700px)").matches;
+// mobileModal(x);
+// modal.addEventListener("change", mobileModal);
+
+
 
 // modalButton.addEventListener("click", function() {
 //     modal.style.display = "block";
