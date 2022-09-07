@@ -1,0 +1,117 @@
+.sticky-sidebar {
+    position: sticky;
+    top: 10em;
+}
+
+.modal-button {
+    padding: 1rem 4rem; 
+    border: 1px solid #444b4e; 
+    border-radius: 0.5rem; 
+    font-size: 1rem; 
+    flex: 0 1 auto; 
+    background-color: rgb(0, 165, 184); 
+    cursor: pointer"
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0; 
+    top: 0; 
+    width: 100%; 
+    height: 100%; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.6); 
+    transform: scale(1.1);
+}
+
+.modal-content {
+    position: relative; 
+    background-color: #ffffff; 
+    margin: 15% auto; 
+    padding: 1rem 1.5rem; 
+    border: 1px solid #444b4e; 
+    border-radius: 0.5rem; 
+    width: 75%;
+}
+
+.close-button {
+    float: right; 
+    width: 1.5rem; 
+    line-height: 1.5rem; 
+    text-align: center; 
+    cursor: pointer; 
+    font-size: 30px; 
+    font-weight: bold; 
+    border-radius: 0.25rem
+}
+
+.value-container {
+    margin: auto; 
+    padding: 0;
+}
+
+.value-container section {
+    padding: 45px 50px; 
+    text-align: center;
+}
+
+.value-container h2 {
+    font-weight: bold; 
+    position: relative; 
+    top: -15px;
+}
+
+.value-container hr {
+    border: none; 
+    border-top: 4px dotted grey; 
+    position: relative; 
+    top: 30px; 
+    width: 70%; 
+    margin: 0 auto; 
+    z-index: 1
+}
+
+.values-content-wrapper {
+    display: flex; 
+    justify-content: space-around
+}
+
+.values-content-block {
+    margin: 0 30px; 
+    text-align: center; 
+    width: 25vw
+}
+
+.values-image-block {
+    width: 15%; 
+    margin: auto; 
+    text-align: center;
+}
+
+.values-img {
+    display: block; 
+    max-width: 50px; 
+    height: auto; 
+    width: auto; 
+    position: relative; 
+    z-index: 2;
+}
+
+.values-header {
+    color: #444b4e; 
+    font-size: 20px; 
+    font-weight: bold; 
+    text-align: center; 
+    padding-top: 10px;
+}
+
+.values-content { 
+    font-size: 9px; 
+    text-align: justify; 
+    margin: 0 20px; 
+    padding: 10px; 
+    width: 100%;
+}
