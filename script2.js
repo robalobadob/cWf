@@ -1,5 +1,6 @@
 //       ****  Task 4: TABBABLE  ****
 
+// Create Tabbable Section
 const tabbable = document.createElement("section");
 tabbable.setAttribute("id", "tab-section");
 tabbable.innerHTML = `
@@ -44,8 +45,28 @@ tabbable.innerHTML = `
         </div>
     </div>
 `;
+
+// Add to DOM
 const hero = document.querySelector(".careers-page-hero");
 hero.append(tabbable);
+
+// Add Tab Functionality
+function openTab (event, tabNum) {
+    var i, tabcontent, tablinks;
+
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace("active", "");
+    }
+
+    document.getElementById(tabNum).style.display = "block";
+    event.currentTarget.className += "active";
+}
 
 // Add CSS
 var sheet = document.createElement('style')
