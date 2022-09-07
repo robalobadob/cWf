@@ -1,7 +1,11 @@
+/* SIDEBAR */
+
 .sticky-sidebar {
     position: sticky;
     top: 10em;
 }
+
+/* MODAL */
 
 .modal-button {
     padding: 1rem 4rem; 
@@ -47,6 +51,8 @@
     font-weight: bold; 
     border-radius: 0.25rem
 }
+
+/* VALUES */
 
 .values-container {
     margin: auto; 

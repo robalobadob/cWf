@@ -1,11 +1,11 @@
-// ****   Task 1: STICKY SIDEBAR   ****
+//       ****   Task 1: STICKY SIDEBAR   ****
 
 // Make Sidebar Sticky
 const sidebar = document.querySelector(".show-on-desktop-min");
 sidebar.classList.add("sticky-sidebar");
 
 
-// ****   Task 2: MODAL   ****
+//       ****   Task 2: MODAL   ****
 
 // Create Modal Button on Sidebar
 const sidebarContent = document.querySelector(".show-on-desktop-min");
@@ -50,7 +50,7 @@ window.onclick = function(event) {
 }
 
 
-// ****   Task 3: SECTION   ****
+//       ****   Task 3: SECTION   ****
 
 // Create Section
 const valueProp = document.createElement("div");
@@ -95,9 +95,6 @@ valueProp.innerHTML = `
 // Add to DOM
 const leadership = document.querySelector(".col-12");
 leadership.append(valueProp);
-
-
-
 
 // Add CSS
 var sheet = document.createElement('style')
