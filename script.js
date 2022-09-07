@@ -63,26 +63,27 @@ valueProp.setAttribute("style", "margin: auto; padding: 0");
 valueProp.innerHTML = `
     <section style="padding: 45px 50px; text-align: center">
         <h2 style="font-weight: bold; position: relative; top: -15px">Value Propositions</h2>
-        <div class="values-content-wrapper" style="display: flex; justify-content: space-around; flex-wrap: wrap">
+        <hr style="border: none; border-top: 4px dotted grey; position: relative; top: 30px; width: 70%; margin: 0 auto; z-index: 1">
+        <div class="values-content-wrapper" style="display: flex; justify-content: space-around">
             <div class="values-content-block" style="margin: 0 30px; text-align: center; width: 25vw">
                 <div style="width: 15%; margin: auto; text-align: center;">
-                    <img class="values-img" style="display: block; max-width: 50px; height: auto; width: auto" src="https://img.icons8.com/external-wanicon-lineal-color-wanicon/344/external-computer-free-time-wanicon-lineal-color-wanicon.png" alt="Computer Icon">
+                    <img class="values-img" style="display: block; max-width: 50px; height: auto; width: auto; position: relative; z-index: 2" src="https://img.icons8.com/external-wanicon-lineal-color-wanicon/344/external-computer-free-time-wanicon-lineal-color-wanicon.png" alt="Computer Icon">
                 </div>
-                <h3 class="values-header style="color: #444b4e; font-size: 20px; text-align: center; padding-top: 10px">Header 1</h3>
+                <h3 class="values-header" style="color: #444b4e; font-size: 20px; font-weight: bold; text-align: center; padding-top: 10px">Header 1</h3>
                 <p class="values-content" style="color: font-size: 9px; text-align: justify; margin: 0 20px; padding: 10px: width: 100%">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, voluptatibus? Magnam a saepe dolorem ipsa cumque iste laudantium nulla perspiciatis incidunt in, sequi minus provident inventore amet fuga? Omnis, pariatur!</p>
             </div>
             <div class="values-content-block" style="margin: 0 30px; text-align: center; width: 25vw">
                 <div style="width: 15%; margin: auto; text-align: center;">
-                    <img class="values-img" style="display: block; max-width: 50px; height: auto; width: auto" src="https://img.icons8.com/cute-clipart/344/truck.png" alt="Truck Icon">
+                    <img class="values-img" style="display: block; max-width: 50px; height: auto; width: auto; position: relative; z-index: 2" src="https://img.icons8.com/cute-clipart/344/truck.png" alt="Truck Icon">
                 </div>
-                <h3 class="values-header" style="color: #444b4e; font-size: 20px; text-align: center; padding-top: 10px">Header 2</h3>
+                <h3 class="values-header" style="color: #444b4e; font-size: 20px; font-weight: bold; text-align: center; padding-top: 10px">Header 2</h3>
                 <p class="values-content" style="color: font-size: 9px; text-align: justify; margin: 0 20px; padding: 10px: width: 100%">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et officiis vero, magnam mollitia inventore iste eaque suscipit placeat! Earum est ducimus vitae ratione! Maiores fuga, reiciendis debitis quae quo veniam.</p>
             </div>
             <div class="values-content-block" style="margin: 0 30px; text-align: center; width: 25vw">
                 <div style="width: 15%; margin: auto; text-align: center;">
-                    <img class="values-img" style="display: block; max-width: 50px; height: auto; width: auto" src="https://img.icons8.com/bubbles/344/touchscreen-smartphone.png" alt="Phone Icon">
+                    <img class="values-img" style="display: block; max-width: 50px; height: auto; width: auto; position: relative; z-index: 2" src="https://img.icons8.com/bubbles/344/touchscreen-smartphone.png" alt="Phone Icon">
                 </div>    
-                <h3 class="values-header" style="color: #444b4e; font-size: 20px; text-align: center; padding-top: 10px">Header 3</h3>
+                <h3 class="values-header" style="color: #444b4e; font-size: 20px; font-weight: bold; text-align: center; padding-top: 10px">Header 3</h3>
                 <p class="values-content" style="color: font-size: 9px; text-align: justify; margin: 0 20px; padding: 10px: width: 100%">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut consequatur autem quas quaerat saepe inventore alias odit porro rem ipsam. Et impedit repellendus a consequatur nobis veniam iste similique repudiandae?</p>
             </div>
         </div>
