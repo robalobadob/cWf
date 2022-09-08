@@ -77,5 +77,133 @@ document.getElementById("defaultOpen").click();
 
 // Add CSS
 var sheet = document.createElement('style')
-sheet.innerHTML = ``;
+sheet.innerHTML = `/* TABBABLE */
+
+.tab {
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    width: 65%;
+}
+
+.tab button {
+    background-color: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    display: inline-block;
+    font-family: 'Open Sans';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0;
+    text-align: left;
+    color: #00a5b8;
+    transition: 0.3s;
+}
+
+.tab button:hover {
+    padding-bottom: 2px;
+    border-bottom: 2px solid #00a5b8;
+}
+
+.tab button.active {
+    text-decoration: none;
+    outline: 0;
+}
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    animation: fadeEffect 1s;
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.left-right-wrapper {
+    display: flex;
+}
+
+.tab-content-left {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 15px;
+    width: 50%;
+}
+
+.tab-image-block {
+    width: 15%; 
+    margin: 0 auto; 
+    text-align: center;
+}
+
+.tab-img {
+    display: block; 
+    max-width: 50px; 
+    height: auto; 
+    width: auto; 
+    position: relative; 
+}
+
+.tab-text-block h3 {
+    margin: 0 0 30px;
+}
+
+.tab-text-block p {
+    margin: 0 0 30px !important;
+}
+
+.tab-content-right {
+    display: flex;
+    margin: 10px 15px;
+    width: 50%;
+}
+
+.tab-mini-hero-block {
+    margin: auto; 
+    text-align: center;
+}
+
+.tab-mini-hero-block span {
+    font-size: 150px;
+}
+
+.hang-loose {
+    animation-name: wave-animation;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;
+    display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }  
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  
+  100% { transform: rotate( 0.0deg) }
+}
+
+@media screen and (max-width: 600px) {
+    .left-right-wrapper {
+        display: block;
+    }
+
+    .tab-content-left {
+        width: 80vw;
+    }
+
+    .tab-content-right {
+        width: 80vw;
+        margin: 10px auto;
+    }
+}`;
 document.body.appendChild(sheet);

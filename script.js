@@ -110,5 +110,214 @@ leadership.append(valueProp);
 
 // Add CSS
 var sheet = document.createElement('style')
-sheet.innerHTML = ``;
+sheet.innerHTML = `/* SIDEBAR */
+
+.sticky-sidebar {
+    position: sticky;
+    top: 10em;
+}
+
+/* MODAL */
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 950; 
+    padding-top: 100px; 
+    left: 0; 
+    top: 0; 
+    width: 100%; 
+    height: 100%; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.6); 
+}
+
+.modal-content {
+    position: relative; 
+    background-color: #ffffff; 
+    margin: 15% auto; 
+    padding: 5rem 6rem; 
+    border: 1px solid #444b4e; 
+    border-radius: 0.5rem; 
+    width: 75%;
+}
+
+.modal-content h1 {
+    margin: 0 0 30px;
+}
+
+.modal-content p {
+    margin: 0 0 30px;
+    width: 60%;
+}
+
+.close-button {
+    float: right; 
+    width: 1.5rem; 
+    line-height: 1.5rem; 
+    text-align: center; 
+    cursor: pointer; 
+    font-size: 30px; 
+    font-weight: bold; 
+    border-radius: 0.25rem
+}
+
+.close-button:hover {
+    color: grey;
+}
+
+/* VALUES */
+
+.values-container {
+    margin: auto; 
+    padding: 0;
+}
+
+.values-container section {
+    padding: 45px 50px; 
+    text-align: center;
+}
+
+.values-container h2 {
+    font-weight: bold; 
+    font-size: 28px;
+    position: relative; 
+    top: -15px;
+}
+
+.values-container hr {
+    border: none; 
+    border-top: 4px dotted grey; 
+    position: relative; 
+    top: 30px; 
+    width: 70%; 
+    margin: 0 auto; 
+    z-index: 1
+}
+
+.values-content-wrapper {
+    display: flex; 
+    justify-content: space-around
+}
+
+.values-content-block {
+    margin: 0 30px; 
+    text-align: center; 
+    width: 25vw
+}
+
+.values-image-block {
+    width: 15%; 
+    margin: auto; 
+    text-align: center;
+}
+
+.values-img {
+    display: block; 
+    max-width: 50px; 
+    height: auto; 
+    width: auto; 
+    position: relative; 
+    z-index: 2;
+}
+
+.values-header {
+    color: #444b4e; 
+    font-size: 22px; 
+    font-weight: bold; 
+    text-align: center; 
+    padding-top: 10px;
+}
+
+.values-content { 
+    font-size: 16px; 
+    text-align: center; 
+    padding: 10px; 
+    width: 100%;
+}
+
+/* 9th gen iPad px width */
+@media screen and (max-width: 1080px) {
+    .modal {
+        padding-top: 0;
+    }
+    .modal-content {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        border: none;
+        border-radius: 0;
+    }
+
+    .modal-box {
+        margin: 0px;
+    }
+
+    .values-container section {
+        padding: 40px;
+    }
+
+    .values-container hr {
+        display: none;
+    }
+
+    .values-content-wrapper {
+        display: block;
+    }
+
+    .values-content-block {
+        display: flex;
+        width: 100%;
+        margin: 20px;
+        padding-bottom: 25px;
+    }
+
+    .values-image-block {
+        margin-left: 50px;
+    }
+
+    .values-img {
+        max-width: 150px;
+    }
+
+    .values-text-block {
+        margin: 0 90px 0 80px;
+    }
+
+    .values-content {
+        padding: 10px 0;
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .values-content-block {
+        display: block;
+        margin: 0;
+        padding: 5px;
+        width: 100%;
+    }
+
+    .values-image-block {
+        display: inline;
+        margin: 0 auto;
+    }
+
+    .values-img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .values-text-block {
+        margin: 0 0 30px; 
+    }
+
+    .values-header {
+        text-align: center;
+    }
+
+    .values-content {
+        margin: 0;
+    }
+}`;
 document.head.appendChild(sheet);
