@@ -7,20 +7,10 @@
 
 /* MODAL */
 
-.modal-button {
-    padding: 1rem 4rem; 
-    border: 1px solid #444b4e; 
-    border-radius: 0.5rem; 
-    font-size: 1rem; 
-    flex: 0 1 auto; 
-    background-color: rgb(0, 165, 184); 
-    cursor: pointer"
-}
-
 .modal {
     display: none; 
     position: fixed; 
-    z-index: 1; 
+    z-index: 950; 
     padding-top: 100px; 
     left: 0; 
     top: 0; 
@@ -28,17 +18,25 @@
     height: 100%; 
     background-color: rgb(0,0,0); 
     background-color: rgba(0,0,0,0.6); 
-    transform: scale(1.1);
 }
 
 .modal-content {
     position: relative; 
     background-color: #ffffff; 
     margin: 15% auto; 
-    padding: 1rem 1.5rem; 
+    padding: 5rem 6rem; 
     border: 1px solid #444b4e; 
     border-radius: 0.5rem; 
     width: 75%;
+}
+
+.modal-content h1 {
+    margin: 0 0 30px;
+}
+
+.modal-content p {
+    margin: 0 0 30px;
+    width: 60%;
 }
 
 .close-button {
@@ -50,6 +48,10 @@
     font-size: 30px; 
     font-weight: bold; 
     border-radius: 0.25rem
+}
+
+.close-button:hover {
+    color: grey;
 }
 
 /* VALUES */
@@ -117,13 +119,28 @@
 
 .values-content { 
     font-size: 16px; 
-    text-align: justify; 
-    margin: 0 20px; 
+    text-align: center; 
     padding: 10px; 
     width: 100%;
 }
 
-@media screen and (max-width: 768px) {
+/* 9th gen iPad px width */
+@media screen and (max-width: 1080px) {
+    .modal {
+        padding-top: 0;
+    }
+    .modal-content {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        border: none;
+        border-radius: 0;
+    }
+
+    .modal-box {
+        margin: 0px;
+    }
+
     .values-container section {
         padding: 40px;
     }
@@ -152,17 +169,16 @@
     }
 
     .values-text-block {
-        margin-left: 80px;
+        margin: 0 90px 0 80px;
     }
 
     .values-content {
         padding: 10px 0;
-        margin: 0 90px 0 0;
         width: auto;
     }
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 600px) {
     .values-content-block {
         display: block;
         margin: 0;
@@ -181,7 +197,7 @@
     }
 
     .values-text-block {
-        margin-left: 0; 
+        margin: 0 0 30px; 
     }
 
     .values-header {

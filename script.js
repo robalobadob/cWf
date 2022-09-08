@@ -10,9 +10,19 @@ sidebar.classList.add("sticky-sidebar");
 // Create Modal Button on Sidebar
 const sidebarContent = document.querySelector(".show-on-desktop-min");
 const modalButton = document.createElement("button");
-modalButton.classList.add("modal-button");
-modalButton.innerHTML = "Click Here For A Modal!"
+modalButton.classList.add("btn-blue", "modal-button");
+modalButton.innerHTML = "Click Here For A Modal!";
 sidebarContent.append(modalButton);
+
+// Create Modal Button on Tablet
+const midContent = document.querySelector(".hide-on-desktop-min");
+const modalButton2 = document.createElement("button");
+modalButton2.classList.add("btn-blue", "modal-button");
+modalButton2.innerHTML = "Click Here For A Modal!";
+midContent.append(modalButton2);
+
+// Select All Modal Buttons
+const modalBtns = document.querySelectorAll(".modal-button")
 
 // Create Modal
 const modal = document.createElement("div");
@@ -37,9 +47,11 @@ modal.append(modalContent);
 var closeButton = modalContent.querySelector(".close-button");
 
 // Add Button Functionality
-modalButton.onclick = function() {
-    modal.style.display = "block";
-}
+modalBtns.forEach(function(e) {
+    e.addEventListener("click", function() {
+        modal.style.display = "block";
+    })
+})
 closeButton.onclick = function() {
     modal.style.display = "none";
 }
@@ -99,4 +111,4 @@ leadership.append(valueProp);
 // Add CSS
 var sheet = document.createElement('style')
 sheet.innerHTML = ``;
-document.body.appendChild(sheet);
+document.head.appendChild(sheet);
