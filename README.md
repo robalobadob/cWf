@@ -2,7 +2,7 @@ Hello Ukrit,
 
 Here is the assessment completed, as requested, including the bonus points.
 
-I have it broken into two sections.  One for the Leadership page (lines 10-332) and one for the Culture page (lines 338-546).
+I have it broken into two sections.  One for the Leadership page (lines 17-339) and one for the Culture page (lines 345-553).
 
 Everything should hopefully be delivered up to your standards, though there are obviously areas to finesse and improve.  With more time, I would have liked to more closely match up the new content with your current design schema but I think I got pretty close.  
 
@@ -13,6 +13,9 @@ Now, without further ado:
 
 
 Copy and paste this into the developer console on https://www.widerfunnel.com/leadership/.
+
+
+```
 
 //       ****   Task 1: STICKY SIDEBAR   ****
 
@@ -338,9 +341,13 @@ sheet.innerHTML = `/* SIDEBAR */
 }`;
 document.head.appendChild(sheet);
 
+```
+
 
 
 Copy and paste this into the developer console on https://www.widerfunnel.com/culture/.
+
+```
 
 //       ****  Task 4: TABBABLE  ****
 
@@ -551,3 +558,5 @@ sheet.innerHTML = `/* TABBABLE */
     }
 }`;
 document.body.appendChild(sheet);
+
+```
